@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>General Information</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+    <body>
+    <div class="navbar">
+        <a href="index.html">App Navigation</a>
+        <a href="Companies.html">Company</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="eLearning.html">eLearning Courses</a>
+        <a href="Instructor-led.html">Instructor-led Courses</a>
+        <a href="classes.html">Manage Classes</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Finance.html">Finance </a>
+        <a href="FAQs.html"> FAQs</a>
+    </div>
+
+<div class="main">
+<div class="sidenav">
+  <a href="#createfacility">Create a facility</a>
+  <a href="#editfacility">Edit/Delete facilities</a>
+  
+</div>
+    
+    
+<article id="createfacility">
+    <h2> How to create a facility.</h2>
+    
+    Navigate to the create facility page, fill out all the details and click on the create button. 
+    
+    <ol>
+    <li> <b> Facility Type:</b> There is two types of facilities. 1) Internal 2) External
+    <ul style="color: darkgoldenrod"><br> 
+        <li>
+        Internal: Facilities that are owned/arranged by the organization.
+        </li>
+        <li>
+        External: Facilities owned/arranged by clients. 
+        </li>         
+    </ul>          
+    </li><br>
+   <li> <b> Facility Code:</b>
+        This helps uniquely recognize facilities across the system. Each facility must have a unique facility code. If you enter the facility code that is already in use, the system will display an error message.  
+    </li> <br>
+    <li><b> NameL</b> Facility Name </li><br>
+    <li><b> Geo Area: </b> Calendars are color-coded based on the geo area. Select the geo area from the dropdown. If you want to add more Geo area and geocode, contact system admin. </li><br>
+    <li><b>Seats: </b>This displays how many students one facility can hold.<br> Note: Facility seats and class seats are diffrent thing. Class seats must be less than or equals to the facility seats. </li><br>
+        
+    <li> <b>Address: </b> Address of the facility. </li><br>
+    <li><b> Room Identifier: </b> Name of the room. One facility may have multiple rooms. The room identifer helps to specify in which room of the facility the class is going to be in. </li><br> 
+    </ol>
+    
+</article>
+    
+<article id="editfacility">
+    <h2>How to edit the facility? </h2>
+    From the edit facility page, make changes and click on the update button. <br>
+    
+    <h2> When can I delete the facility??</h2>
+    <p> If the facility is assigned to the active class, you won't be able to delete it. The list of facility page will not show the delete icon to delete the facility. <br> If the facility is available means is not assigned to classes, click on the delete icon to delete the facility and the system will delete the facility from the database.   </p>
+    
+</article>

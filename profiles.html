@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>General Information</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+    <body>
+    <div class="navbar">
+        <a href="index.html">App Navigation</a>
+        <a href="Companies.html">Company</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="eLearning.html">eLearning Courses</a>
+        <a href="Instructor-led.html">Instructor-led Courses</a>
+        <a href="classes.html">Manage Classes</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Finance.html">Finance </a>
+        <a href="FAQs.html"> FAQs</a>
+    </div>
+
+<div class="main">
+<div class="sidenav">
+  <a href="#createprofile">Create user profiles</a>
+  <a href="#editprofile">Delete user profiles</a>
+  <a href="#userroles"> Types of user roles??</a>
+   <a href="#updateroles"> How to update user roles??</a>
+  <a href="#userinvite"> How to send user invite??</a>
+<a href="#deactivated"> What happens to the profiles after the company is deactivated??</a>
+  <a href="#forgetpass"> Forgot your password??</a>
+</div>
+    
+<article id="createprofile">
+<h1> How to create a user profile and what does each field on the create profile page means?? </h1>
+<p> Check out <a href="index.html"> App navigation</a> page to understand the application navigations.</p>
+
+To create a user profile, navigate to the profiles page and click on the + icon to open the create page to add a new profile. 
+
+<ul> 
+    
+    <li>
+        <b>Company:</b> This dropdown shows all the active companies in the system.  <h4 style="color: darkgoldenrod"> If the user doesn't have any company and want to take a course then create an individual company for that user. and on the profile page, select the company you just created for the user. </h4>
+    </li>
+    <li>
+    <b>First Name:</b> The First name of the user.<br>
+    <b>Middle name:</b> You can provide middle initial or middle name of the user. <br>
+    <b> Last Name:</b> The Last name of the user. 
+    </li><br>
+    <li>
+    <b> Date of Birth (DOB):</b> If you don't wish the user to have an online account or you don't know their email addresses then you must provide the DOB of the user. Please see the policy document to know more about why we require user's DOB and related securities. The system will validate, if the form has any of the below values on submit action or not.<br><br>
+    <b style="color: darkgoldenrod"> <ol> <li> DOB</li> <li> Primary Email Address</li> <li> Alternate email address</li></ol></b>
+    <h4>If the you don't provide any of these values then the system will display an error message shown in the below picture.</h4>
+    <img src="images/profile_1.PNG" class="images" />
+    </li>
+    
+    <li>
+    <h2> What is the online user account section on the create profile page??</h2>
+    <img src="images/profile_2.PNG" class="images" />
+        
+    <p>If you wish the user to have an online account then fill out this section as shown in the above picture. </p>
+    <ol>
+    <li> <b style="color: darkgoldenrod"> Primary Email Address:</b> If users want to have an online account, they must provide an email address. Without the email address they can't have an online account. Please view <a href="#onlineaccount">Benefits of having an online account</a> for more information. </li> <br>
+        
+    <li><b style="color: darkgoldenrod"> User Roles:</b> Check out <a href="#userroles">Different user roles explained </a> for more information on different types of user roles. In general, if you are creating a profile for students who just wants to take online courses and register for different classes then select <b style="color: darkgreen"> Student </b>role from the user role dropdown and if you want to give user an account manager role to manage their own organizaation then select account manager role. </li><br>
+        
+    <li>
+      <b style="color: darkgoldenrod"> Alternate Email Address:</b>So, user doesn't want to provide DOB and also she/he doesn't want an online account, in that case, you can add alternate email address. That way we will have something to uniquely identify the user's profile in our system. If in future, the user wants to have an online account then you can use alternate email address as their primary email address to send the user invite link.
+    </li>
+    </ol>
+    </li><br>
+    
+    <li> <b>Contact Information: </b> You can provide contact information of the user in this section like their address and phone numbers.</li>
+</ul>  
+    
+</article>
+    
+<article id="editprofile">
+<p> You can edit any user's profile from the edit page of the profiles </p>
+    
+<h3 style="color: darkred">The primary and alternat email addresses must be unique withing the system, if you try to use the same email address for another user, the system will give an error. </h3>
+    
+<h2> What happens when I delete the profile???</h2>  
+<p> When you click on the delete icon to delete the user's profile, the system will if the user has any active registration or not. for example, if she/he is registred for any classes or not. If yes, The system will not delete the profile, but it will display an error message. <br> <br> If the profile has no registration records then the system will delete the profile from the database entirely. </p>
+    
+</article>
+  
+<article id="userroles">
+<h2> Different Types of User Roles. </h2>
+<p>Currently we have total 6 different types of user roles. </p>
+    <ol>
+        <li>
+        <b> System Admin:</b>Access to all the system tables. System admin has access to all functionalities like LMS admin, students, Finance admin etc.  
+        </li><br>
+        <li><b>LMS Admin:</b> LMS admin has access to all member and course management things. like eLearning courses, classes, facilities, member companies, user profiles, etc.</li><br>
+        
+        <li>
+        <b> COR Admin:</b> A user with all the COR related administration. 
+        </li><br>
+        <li><b> Account Manager:</b>
+        LMS Admin access that is limited to their organization only
+        </li><br>
+        <li><b>Student:</b>
+        Users with the student role will have access to their own courses and learning history, certificate management etc. All the users will have the students role. 
+        </li><br>
+        <li><b>Advisor:</b>
+        User role assigned to advisors to process the classes and other students related functionalities. 
+     </li><br>    
+    </ol>
+    <p> System admin can update user's role to any other role as described above. But LMS admin can not change user's role to system admin. LMS admins will not see system admin value on the user roel dropdown. Same way the account manager can only see the Student and advisor role value in the dropdown.</p>
+</article>
+    
+<article id="updateroles">
+    
+    <h2> How to update user roles??</h2>
+    
+</article>
+    
+<article id="userinvite">
+  
+<h2> How can I send user an invite? </h2>  
+<p> You can send user invite from two pages. One is from the List of profiles page as shown in the below picture. And second is from the edit profile page.  </p>
+    <img src="images/profile_3.PNG" class="images" />
+<p> As shown in the above picture, click on the invite link from the list of profiles page. This will open the send user invite page. <a href="#invite">Send user invite page.</a> </p>
+    
+<p> The other way is from the edit profile page. Go to the edit profile page of the user you want to send the invite to.From that page, click on the send user invite button, as shown in the below pictures. </p>
+    <img src="images/profile_4.PNG" class="images" />
+    <p> On the send user invite page, Select the user role, provide email address, and click on the Send invitation button. (Refer to the below picture). </p>
+    <img src="images/profile_5.PNG" class="images" />
+   <h3> If you enter the email address that is already exist in the system then the system will display an error message as shown in the below picture. </h3>
+    
+    <img src="images/profile_6.PNG" class="images" />
+</article>
+    
+<article id="deactivated">
+    
+<h2> What happens to the profiles after the company is deactivated?? </h2>    
+</article>
+    
+<article id="forgetpass">
+  <h2>Forgot your password??</h2>  
+    <p>You can reset your password by clicking on the forgot password link on the login page. Please refer to the below steps.</p>
+    
+    <ol>
+    <li> 
+    Go to the login page of the CAATSS system. From that page, click on the forgot password link as shown below.   
+    </li><br>
+        <img src="images/profile_7.PNG" class="images" /><br>
+        <br>
+        <li> The system will display forgot password page, provide email address you wish to recieve the reset password link to. And click on the send reset password link button. Please see the below picture. </li><br>
+    <img src="images/profile_8.PNG" class="images" /><br>
+        <li> The system will send you an email notification with the reset pasword link. Click on that link and enter new password and confirm password. Make sure both passwords are same and click on the update button to update your password. </li><br>
+        
+        <li> If you don't recieve the reset link, contact the system admin. </li>
+    </ol>
+</article>
+    
+</div>
+</body>
+    
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>General Information</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+    <body>
+    <div class="navbar">
+        <a href="index.html">App Navigation</a>
+        <a href="Companies.html">Company</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="eLearning.html">eLearning Courses</a>
+        <a href="Instructor-led.html">Instructor-led Courses</a>
+        <a href="classes.html">Manage Classes</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Finance.html">Finance </a>
+        <a href="FAQs.html"> FAQs</a>
+    </div>
+
+<div class="main">
+<div class="sidenav">
+  <a href="#createclass">Create a class</a>
+  <a href="#editclass">Edit/cancel classes</a>
+  <a href="#registeredstudents">How to view the list of registered students??</a>
+  <a href="#unregister">How to unregister students??</a>
+  <a href="#processclass">How to process the class??</a>
+  <a href="#afterregi">What happens after the class is  processed??</a>
+ 
+    
+</div>
+    
+<article id="createclass">
+    
+    <h2> How to create a class? </h2>
+    <p>You can create a class from the create classes page </p>
+    <ol>
+    <li> <b>Select a Course</b> It is a dropdown with all the active courses. Select the course you want to schedule a class for. </li><br>
+    <li> <b>Delivery Method:</b>Select the delivery method for the class from this dropdown. There are four types of delivery methods.<br><br>
+    <ol>
+    <li> <b> Regular:</b> Training scheduled at association's facility</li><br>
+    <li> <b> Virtual:</b> Scheduled online course with live instructor and interactions</li> <br>
+     <li> <b> Virtual:</b> Scheduled online course with live instructor and interactions</li><br>
+    <li><b> On-demand:</b> Both can be done either at the client's office or association's facility. The on-demand classes are private classes. </li><br>
+     <li><b> In-house:</b> CSNS certified trainer provides association's training at external locations. In-house classes are also private classes.  </li>
+    </ol>  <p> Private classes are not visible to end-users. They can not register themselves for private classes.  </p>  
+    </li><br>
+    <li><b> Public/Private:</b> Public classes are visible to end-users and they can register for public classes. classes with the delivery method regular can be both public and private.  </li><br>
+    
+    <li> <b>Start Date:</b>It is the date of the scheduled class. </li><br>
+    <li><b> Start/End Time:</b> You can specify the timing of the class. The end time must be greate than the start time or else the system give an error. </li><br>
+    <li> <b> Facility:</b> Select the facility where the class is going to be. You can add/delete/edit facility details from the other page. Click <a href="Facilities.html" target="_blank"> Facility </a>  to get more information.</li><br>
+        
+    <li><b>Total Seats: </b> This defines the total number of students this class allows. The facility seats and the class seats are different thing. A facility seats are the number of students that room can hold. Class seats must be less than or equals to the facility seats. </li><br>
+    
+    <li><b>Instructor:</b> Select the instructor who is going to teach the class. The dropdown only displays the list of instructors with an active online account. <h4> If you don't see any instructor's name, check if they have an online account or not.</h4></li>
+    <li> <b> Quiz??</b> If the switch is on that means the class offers a quiz and if it is off means it doesn't. By default, the switch is turned on to minimize clicks by admin. </li><br>
+    <li><b>Supress Email Notifications:</b> When the class is created, the system sends an email to the selected instructor with the class details. When you update the class details and the students are registered for the class then the system will send an email notification to students and the instructor notifying them about class changes. If you don't wish to send an email notification then turn this switch on. When it is on, the system won't send an email to students and the instructor. </li>
+    </ol>
+<h3 style="color: darkgoldenrod"> When you click on the create/edit button, the  system will validate if the facility and the instructor is available or not. If the facility is assigned to another class for the given date and time OR the instructor is already assigned to another class for the same date/time, The system will throw an error and will not create a class. Refer the below picture. </h3>
+<img src="images/class_1.PNG" class="images" />
+</article>
+    
+<article id="editclass">
+ <h2> How to edit the class??</h2>
+    <p> To edit the class, go to the edit page of the class you wish to edit details for. When you edit the class, the system will send an email notification to the registered students and the instructor.</p>
+    
+<h2> How to cancel a class?? </h2>
+<p>If the course is unpublished, you won't be able to cancel the class. If the course and class both are published then only you will see a link under the actions column to cancel the class. Click on that link and it will prompt you to add an optional message. If you wants to explain to the students and the instructor about why you are cancelling the class, add that message in the optional message box. When you cancel a class, registered students and the instructor will get an email with the optional message. </p>
+    
+</article>
+  
+<article id="registeredstudents">
+<h2> How to view the list of registered students for the class??</h2>    
+
+    <p> You can see the list of registered students page two ways:</p>
+    <ol><li> <b>From the Classes page</b> Click on the view registration link from the list of classes page as shown in the below picture.</li><br>
+    <img src="images/class_2.PNG" class="images" /> <br>
+    <li> <b>From the Calendar: </b>There is a calendar present on the admin dashboard, find the class and click on the class to view the list of registered students page. </li><br>
+    <img src="images/class_3.PNG" class="images" /> 
+    </ol><br>
+<p> The view registration page looks like the below picture. You can print the page, cancel the class, unregister students or edit their profiles. </p>
+<ol>
+<li> To print the class details with the list of registered students, click on the print button. </li><br>
+    
+<li> To cancel the class, click on the cancel button. This action will cancel the class and refund the money. </li><br>
+    
+<li> Click on the edit profile icon present next to each profile to edit user's profile details. This will open up the new window, after updating the profile, come back to the view registration page and refresh the page to see the updated details of the user. </li><br>
+
+</ol>
+<img src="images/class_4.PNG" class="images" />
+</article>
+    
+<article id="unregister">
+<h2> How to unregister students?? What happens when I unregister them??</h2> 
+    
+<p> On the view registration page, find the student you wish to unregister and click on the delete button. This action will unregister the student and refund the money. IF they have paid for the class using credit card then the system will unregister and refund the money back to their credit card account. For the invoice, the system will update the invoice and remove the student field from the invoice. </p>
+    
+</article>
+    
+<article id="processclass">
+ <h2> How to process the class??</h2>  
+<ol><li><p><b style="color: darkorchid"> As an Advisor:</b>
+From the admin dashboard, click on the class you wish to process. this will open the process completed classes page. </p></li>
+<li><p><b style="color: darkorchid"> As an LMS admin:</b>
+From the view registered students page, click on the process button OR from the admin dashboard, click on the class you wish to process. this will open the process completed classes page. </p></li></ol>
+    <h4 style="color: darkgoldenrod"> The attended dropdown has three values: </h4>
+    <ol>
+        <li><b> Attended:</b> Select this value, if the student has attended the class.</li><br>
+        <li><b>No Show:</b>Select this if the student was absent. </li><br>
+        <li><b>Missing required materials:</b>Select this if the student was present but was missing the required materials and as a result wouldn't able to attend the class. </li>
+    </ol>
+<p> There is also a <b style="color: darkolivegreen">Valid ID </b> field. If the student had shown the valid govenrment ID then check this box. </p>
+    
+<h3> Classes with the Quiz:</h3>
+<p> This page will display a score field if you have turned the switch <b style="color: darkblue">on </b>while creating a class. </p>
+<img src="images/class_5.PNG" class="images" />
+    
+<h3> Classes without the Quiz:</h3>
+<p> This page will not display a score field if you have turned the switch <b style="color: darkblue">off</b> while creating a class. </p><br>
+<img src="images/class_6.PNG" class="images" />
+    <br>
+ <ol><li> The minimum passing marks is 80%. The system will automatically decide if the student has passed the class or not based on the score you enter in the score field.</li><br> 
+<li>If you put less than 80%, the system will consider it as failed and move the student to the processed-incomplete tab.</li><br> 
+     
+<li> If the score is greater than or equals to 80% then the system will move the student to processed-complete tab. </li><br>
+     
+<li> <b>Processed-incomplete: </b> This will have a list of students who failed the class, or didn't show up, or forgot to bring the required materials. Please refer to the below image. </li><br>
+
+<img src="images/class_7.PNG" class="images" /> <br><br>
+    
+<li> <b>Processed-complete: </b> This will have a list of students who successfully complete the class that includes more than 80% marks and if the class doesn't offer a quiz then the system will display all the students who attended the class in this tab. If the course is offering a certificate then the system will display a certificate print/create link as well. </li><br>
+
+<img src="images/class_8.PNG" class="images" /> <br>
+    
+</ol>
+</article>
+<article id="afterregi">
+    
+<h2> What happens after complete processing the completed class??</h2>
+    
+<p> After you hit the update button, The system will send the certificate to students, if their primary and/or alternate email addresses are found. IF the system couldn't find the email id to send the certificates to then it will send all the certificates to the admin, letting the admin know that these are the students with no email address. <br><br> Once the class is processed, all students with an online account can access the certificates from their account.</p>
+    
+</article> 
+
+</div>
+</body>
+    
+</html>

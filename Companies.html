@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>General Information</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+    <body>
+    <div class="navbar">
+        <a href="index.html">App Navigation</a>
+        <a href="Companies.html">Company</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="eLearning.html">eLearning Courses</a>
+        <a href="Instructor-led.html">Instructor-led Courses</a>
+        <a href="classes.html">Manage Classes</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Finance.html">Finance </a>
+        <a href="FAQs.html"> FAQs</a>
+    </div>
+
+<div class="main">
+<div class="sidenav">
+  <a href="#createcompany">Create a Member Company</a>
+  <a href="#editcompany">Edit/Delete the Member Company</a>
+  <a href="#addcontact">Add contact person and learner</a>
+  <a href="#bulkregistration">How to bulk register students??</a>
+</div>
+    
+<article id="createcompany">
+   
+    <H1>What each field means on the create company page???</H1>
+    
+    <p> Check out <a href="index.html"> App navigation</a> page to understand how to navigate to the company page and other functionalities.</p>
+    
+<ul>
+    <li><b>Legal Name:</b> It is the name of the commpany and must be unique. </li>
+    <li><b>Common Name:</b>  </li>
+    <li><b>Parent Company:</b> One company maybe an affiliate company of other companies. You can find parent company by writing on this field. For example, if the parent company's name is Construction association  of Manitoba, when you type C in the field, the system will filter the dropdown and display all active company that has C in their name.  </li>
+    <li><b>Number of Employees:</b> It is important to know how many employees the company have. If you are creating an individual company (It is not a company, but to register the individual person, you need to add him/her as a company in the system) then put 1 as the total number of employees. </li>
+    <li><b>Business Number:</b> It is 8 digit number of the company. Companies that have an account with WCB must provide business number. If you are crteating a company with memnbership type as <b style="color: darkgoldenrod">Member,</b> you must fill out this field or the system will give an error message. </li>
+    <li><b>SIC Number:</b> To be a full member a company must have an SIC in Construction Industry. </li>
+    <li><b>WCB Classification:</b>  </li>
+    <li><b>WCB Account Number:</b>  </li>
+    <li><b>Membership Type:</b>A company must belong to one of the below membership type and it should only have membership type. You can add more membership types from the data table as a system admin. <br>
+    <p style = "color: darkgoldenrod"> 1. Member: Any company with an active WCB account or with the SIC code between 4011 to 4499 + 3551 can qualify for this membership type.  <br><br>2. Associate Member: For this membership type, there is no SIC code required. Anyone can have associate member membership type. <br><br>3. Associate member plus: Associate members who pay annual fees qualifies for special discounts and that mmebrship type is called associate memberhsip plus. </p>
+    </li>
+    <li><b>Membership Expiry:</b>Some membership type might expire, provide expiration date on this field. First select the membership type and then select an expiry date.  </li>
+    <li><b>Company Type:</b> This field exlains the type of the company like: Union, Government, Education etc. </li>
+    <li><b>Company SubType:</b>Company type might have subtype like: company type Government has subtypes: Provincial, Federal, Municipal </li>
+    <li><b>Email:</b> Provide email of the company. This can be helpful to send their employee's certificates, transcripts, invoices, etc.  </li>
+    <li><b>Address:</b>There are two types of addresses. Billing & Shipping. The auto-complete field is going to show the Canadian addresses only. If you wish to enter addresses of other countries then you would have to fill out other address fields.</li>
+    <li><b>Phone Number:</b> There are four phone number fields present. You can fill all or any one of those fields. The system is  going to validate if any one field has value in it or not. If none of the field has value in it, the system going to give missing required fields error.   </li>
+    
+</ul>
+If you don't see expected values in any of the dropdown(Membership type, company type, or company subtype) present on the create company page, contact system admin. Only users with system admin role can add/remove/edit the values of dropdowns. <br>Fill out all the required fields and click on the create button to create the member company. 
+</article>
+
+<article id="editcompany">
+    
+    <!-- Edit Company -->
+   
+    <H1>Edit a member company </H1>
+    <p> From the edit page of the company, you can edit the member company details. If you get an error, it is mostly because you left the required field empty. For other types of errors, contact system admin. </p>
+    
+    <!-- Delete Company -->
+    
+     <H1>Delete a member company </H1>
+    By default, the system displays a list of all active companies on the company list page. When you click on the delete button, the system will validate if the active company has any active profiles attached to it or not. <br>
+    <ol style="color: darkgoldenrod">
+    <li>If the company has profiles attached then it will move the active company into an inactive state instead of deleting it completely.</li>
+    <li>If the company doesn't have any profiles attached and you click on the delete button, the system will delete the company from the database. </li>
+    </ol> 
+    
+    <!-- Deactivated Company -->
+    
+     <H1>View the list of deactivated member companies. </H1>
+    <p> Once the company is inactivated, you can view the list of all deactivated companies by clicking on the <b style="color: darkblue">show deactive </b> link from the list of companies page.</p>
+</article>
+ 
+<article id="addcontact">
+    
+<h1> How to add a Contact person and a learner from the company page???</h1>
+    
+    <p> The <b style="color: darkblue">contact person</b> is someone who represents the company and whom we can contact in any situation. When you click on the add contact person icon present on the actions column of the company, the system will open up the add profile page, from there you can add a contact person for the company. If you wish to see details of the contact person, click on the view company page or search for the contact person from the list of profiles page. </p>
+    <p> You can add the<b style="color: darkblue"> learner's profile </b>the same way as you would add the contact person. From the list of companies page, click on the add learner link, it will open the add profile page. You can see the newly added profile on the list page of the profiles page. Use the search box to search for profiles </p>
+</article>
+        
+<article id="bulkregistration"></article>     
+<h1> How to register students as an admin </h1>
+    <h2 style="color:darkgoldenrod"> Overview of the registration process </h2>
+    <ol> <li>To register students as an admin, go to the list of company page. Find the company you want to register students for and click on the bulk register icon. This will open up the list of profiles page for that company. This profile page will have all the profiles of the selected company. Search and select the profiles you want to register, and click on the green icon (that says register students).</li> <br>
+    <li>This action will open the calendar, find the class you want to register the students for and click on that class. The system then will open the register students page, check all the details and click on the proceed with registration button.</li><br>
+    <li>Select the payment method: <b style="color: darkblue"> Credit Card</b> OR <b style="color: darkblue"> Invoice. </b> Based on the payment method, fill out details and click on the submit payment/Invoice button. This will register students for the class.</li><br>
+    <li>On the successful registration, students and the admin will get an email notification of the successful registration.</li> </ol>
+    
+    <h2 style="color: darkgoldenrod"> The below steps explain the bulk registration process in detail.</h2>
+  
+<h2> Register Students for regular public/private classes</h2> 
+<ol>
+
+<li> From the List of companies page, click on the register students link as shown in the below picture. <br><br>
+<img src="images/company_1.PNG"/ class="images">
+</li>
+    
+<li> Select profiles. If the list is big, you can search for profiles using the search box. After selecting the profiles, click on the green icon present on the page. <br><br>
+<img src="images/company_2.PNG"/ class="images">
+</li>  
+    
+<li>This action will redirect you to the calendar page. Find the class you want students to register for. Private classes have a lock symbol as shown in the below picture. By hovering over the class list, you can see the class details. Click on  the class to select the class.  <br><br>
+<img src="images/company_3.PNG"/ class="images">
+</li> 
+
+<li>The system will display a register students page with the class, students, and order details. Review all the details before clicking on the proceed with registration button.<br><br>
+
+<ul>
+    <li> The page has a course name, class date, start & end time, as well as the course rate. The system will calculate the subtotal by multiplying the number of students with the course rate.
+    </li> 
+    <li>
+    When you select user profiles, the system is going to check the below conditions <br><br>
+    <ol><li>If any of the selected students have previously registered for the class or not.</li>
+    <li>If yes, then the system will check, if that student has successfully completed the course or not. If this condition is true then the system will filter out those students and move them to another section as shown in the below picture.</li></ol>
+    </li><br>
+    
+    <li>The page also displays subtotal, taxes, and total of the order. Once you have checked the details on this page, click on the proceed with registration button. If you wish to cancel the registration then click on the cancel registration button.
+    </li>
+</ul>
+ <p style="color: darkgoldenrod"><b> When you click on the proceed with registration button, the system will send an email to the selected students and register them for the selected class. </b></p>
+    
+<img src="images/company_4.PNG"/ class="images">
+</li><br>
+
+    
+<li> When you click on the proceed with registration button,  the system will redirect you to the payment page. As shown in the below image, you can select credit card OR invoice as your method of payment. This pictures shows the credit card page, the invoice page will have one field to enter PO number instead of the card details.<br>The system will validate the credit card details and if the the payment is successful then the system will display the payment reciept. <br><br>
+<img src="images/company_5.PNG"/ class="images"><br>
+<p> If there is any issues with the card, the system will display an error message with the reason of the failure. You will have an option to go back and make the payment again. But if the card details are invalid, the system will display it on the same page as shown in the below picture.  </p>
+<br>
+<img src="images/company_6.PNG" class="images" />
+</li>
+</ol>    
+<h2>Register students for the on-demand and in-house classes.</h2> 
+
+<p>
+For the on-demand/in-house classes, The steps 1 to 4 are the same, but for the release one, there is no payment required. Instead of proceed with registration, you would see the register students button. When you click on that button, the system will automatically register selected students for selected class. <br><br> For the release one, the system will not generate invoices automatically so the finance admin will need to create invoices manually for the on-demand classes. 
+    
+</p>        
+        
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>General Information</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+    <body>
+    <div class="navbar">
+        <a href="index.html">App Navigation</a>
+        <a href="Companies.html">Company</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="eLearning.html">eLearning Courses</a>
+        <a href="Instructor-led.html">Instructor-led Courses</a>
+        <a href="classes.html">Manage Classes</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Finance.html">Finance </a>
+        <a href="FAQs.html"> FAQs</a>
+    </div>
+
+<div class="main">
+<div class="sidenav">
+  <a href="#createinstructor">Create an Instructor-led course</a>
+  <a href="#editinstructor">Edit/Delete the Instructor-led course</a>
+  <a href="#courseclass">How to create a class from the course list??</a>
+  <a href="#prereq">How to add pre-requisite courses??</a>
+  <a href="#prereqremove">How to remove pre-requisite courses??</a>
+</div>
+
+<article id="createinstructor">
+    <h2> How to create an instructor-led course.</h2>
+    <p> Fill out all the required fields on the create instructor-led courses page and click on the create button to create the course. </p>
+    <h3 style="color: darkgoldenrod"> When you first create the course, it will be in the draft state. Double click on the closed eye icon to publish the course.</h3>
+    
+    
+    <h2> Difference between draft and published course. </h2>
+    <ol>
+    <li> <b> Draft:</b> Only the admins can see the courses that are in the draft state. It is not visible to the end-users. <h4 style="color: darkcyan; font-style: bold">If the instructor-led course is in draft state, it means users can not see the course details as well as all the classes scheduled for that course. </h4></li>
+        
+    <li> <b> Published:</b> All published courses are visible to end-users for registration. As an admin you can not update the course details if it is published. You must unpublish(Draft) it to update the course details.</li>
+    </ol>
+    <h3> What happens when I update course details and students are registered for the courses??</h3>
+    <p> Students who are already registered for the course won't get affected by the changes. It will only affect the new users. </p>
+    
+    <h3 style="color: darkgoldenrod"> Once the course is created, you won't be able to update the course classificatin and the course code, so make sure you select correct classification and add right course code. It is not the end of the world, but you need to then delete the course and create it again. </h3>
+    
+    <h2> What does each fields mean on the create instructor-led courses page??</h2>
+    
+    <ol>
+    <li><b>Title:</b> Name of the instructor-led course. </li><br>
+    <li><b>Description:</b>Long or short course description. </li><br>
+    <li><b>Course Classification:</b> Each course must fall under any one of the classification. The course classification and the membership type of the company decides the course rate for that user. System admin can add/edit/remove the course rates and course classification from the data tables.  </li><br>
+    
+    <li><b>Course Code:</b> It is the code to uniquely identify courses. Each course must have unique course code. If you enter the same code for another course, the system will display an error message. </li><br>
+    
+        <li><b> Course Duration:</b> Duration of the course. Note that the duration of the course and duration of the class both are different thing. A course duration is the amount of time it takes to complete the course. Whereas, the class duration varies based on the situations and mayebe greater than or equals to or less than the course duration. Course duration fields takes Numeric values and the duration is in minutes. If the course is an hour long then put 60 minutes as the course duration value.</li><br>
+        
+        <li> <b> Image:</b> To upload the course image.</li><br>
+        <li><b> Tags:</b> Tags help you search for the course within the system. you can add any kind of tags and later use that tags to search for the course. </li><br>
+        <li><b>Certificates Type:</b>Type of certificate that the course offers. If the course doesn't offer any certificate then select blank as the dropdown value. Click on the <a href="#">Types of certificates</a> to know more about certificates. </li><br>
+    <li><b>What to bring:</b> If you wish students to bring required materials with them then describe it here. When they register for a class or get registered for the class, they will get an email notification with the course and class details. Thee email will contain WHAT TO BRING items.</li><br>
+        <li><b>Instructor Signature:</b> If the course offers a certificate and requires instructor's signature instead of the CEO/Director's signature then check this field. When this field is selected, The system will put instructor's signature on the certificate. </li>
+    
+</ol>
+</article>
+    
+<article id="editinstructor">
+    <h2> How to Edit the instructor-led course?</h2>
+    <p> Make sure the course is in the draft state, if not then double click on the course to unpublish the course. Once the course is unpublished, click on the edit icon to edit the course details. The course classification and course code is not editable. </p>
+    <h2> Can I delete the instructor-led course??</h2>
+    <p> You can delete the course if it doesn't have any classes scheduled. Once you create a class for the course, you won't be able to delete the course. You then need to cancel the class and delete the course.<br><br> But if the course doesn't have any classes scheduled then you can delete the course by clicking on the delete icon from the list of instructor-led courses page.</p>
+    
+</article>
+  
+<article id="courseclass">
+    <h2> Can I create a class from the course list??</h2>
+    <p> Yes, you definitely can create a class from the list of instructor-led courses page. Click on the classes link present under the actions column on the list of courses page as shown below. This will open the create class page.  </p>
+    
+    <img src="images/instructor-led_1.PNG" class="images" />
+         
+    </article>
+    
+<article id="prereq">
+    
+    <h2> What are the prerequisite courses? </h2>
+    
+    <p> Some courses require students to first complete another course in order to take the current course. In that case, you can specify which course is a prerequisite to another course. </p>
+    
+    <h2> How to add prerequisite courses??</h2>
+    <ol>
+    <li> Make sure the course is unpublished. If the course is published, you will not see the link to add prerequisite courses. Refer to the below picture. </li><br>
+    <img src="images/instructor-led_2.PNG" class="images" /><br><br>
+    
+    <li> Click on the prerequisite link. This will open up the manage prerequisites page. From this page, click on the <b style="color: darkgoldenrod"> Add more prerequisite courses </b> link as shown below.</li><br>
+    <img src="images/instructor-led_3.PNG" class="images" /><br><br>
+    
+    <li>Select courses that you want to add as prerequisites and click on the Green + icon. </li><br>
+    <img src="images/instructor-led_4.PNG" class="images" /><br><br>
+    <li> Now you can see the selected courses on the prerequisite tab as shown below. </li> <br>
+    <img src="images/instructor-led_5.PNG" class="images" /> <br><br>
+        
+    <li> You can also mention what is the minimum courses a user must finish to attend the class. You can provide this information on the minimum required field as shown below. The minimum required field must have value less than or equals to the selected prerequisite courses. </li><br>
+    <img src="images/instructor-led_6.PNG" class="images" /> 
+    </ol>
+    </article>
+    <article id="prereqremove">
+<h2> How to remove the prerequisite course??</h2>
+    <p> From the manage prerequisite page, click on the courses you want to remove and click on the - icon and this will remove the selected courses. When you remove the prerequisite course, the system will automatically adjust the minimum required field based on the number of courses present in the prerequisite tab. You can update the minimum required field anytime, just make sure the minimum required value must be less than or equals to the prerequisite courses. </p>
+</article>
+</div>
+</body>
+    
+</html>
